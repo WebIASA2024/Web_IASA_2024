@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .carousel-inner {
+        height: 400px; /* Висота каруселі */
+    }
+
+    .carousel-inner img {
+              object-fit: cover;
+    }
+</style>
 </head>
 <body>
-    <header>
+        <header>
         <nav>
             <span>
                 <a href="./../index.html">
-                    <img src="./../images/emblema.jpg" alt="Кнопка виходу на головну сторінку">
-                </a>
-            </span>
-            <a href="./../index.html/#services">Послуги</a>
+                    <img src="./../images/emblema.jpg" alt="Кнопка виходу на головну сторінку" width="150px">
+                    </a>
+                </span>
+            <a href="./../index.html#hero">Головна</a>
+            <a href="./../index.html#services">Послуги</a>
             <a href="./shop.html">Магазин</a>
-            <a href="#contacts">Contact us</a>
+            <a href="./../index.html#reviews">Відгуки</a>
+            <button id="openFormBtn">Зв'язатись</button>
         </nav>
     </header>
     <article>
@@ -38,23 +49,23 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="./../images/sert_1.jpg" alt="Los Angeles" style="width:100%;">
+                <img src="./../images/sert_1.jpg" alt="Los Angeles" width="100px">
             </div>
 
             <div class="item">
-                <img src="./../images/sert_2.jpg" alt="Chicago" style="width:100%;">
+                <img src="./../images/sert_2.jpg" alt="Chicago" width="100px">
             </div>
     
             <div class="item">
-                <img src="./../images/sert_3.jpg" alt="New york" style="width:100%;">
+                <img src="./../images/sert_3.jpg" alt="New york" width="100px">
             </div>
       
             <div class="item">
-                <img src="./../images/sert_4.jpg" alt="New york" style="width:100%;">
+                <img src="./../images/sert_4.jpg" alt="New york" width="100px">
             </div>
         
             <div class="item">
-                <img src="./../images/sert_4.jpg" alt="New york" style="width:100%;">
+                <img src="./../images/sert_4.jpg" alt="New york" width="100px">
             </div>
     </div>
 
@@ -71,6 +82,20 @@
 </div>
 
     <footer id="=contacts">
+        <div>
+            <blockquote><h2>Зв'яжіться з нами</h2></blockquote>
+            <br>
+            <p>Phone</p>
+            <b>+123-456-78-90</b>
+            <p>Email</p>
+            <b>name@email.com</b>
+            <p>Address</p>
+            <b><a href="https://maps.app.goo.gl/KUZNQT1GrH1TAQYc9">Київ, вул.Жилянська 31</a></b>
+            <div>
+                <span><img src="./../images/metro.png" alt="Емблема метрополітена" width="15px"></span>
+                <b>Олімпійська</b>
+            </div>
+        </div>
         <a href="./../index.html/#contacts">Контакти</a>
         <a href="https://www.tiktok.com/@dr.ovcharenko?_t=8qtqBxTkLOX&_r=1"><img src="./../images/tiktok.png" alt="tik tok" width="30px"></a>
         <a href="https://www.instagram.com/cosmetology_dr.ovcharenko/"><img src="./../images/instagram.png" alt="instagram" width="30px"></a>
