@@ -1,3 +1,10 @@
-div{
-    background-color: aqua;
+:root{
+    --color-primary-dark: #1D2D25;
+    --color-teracota-dark: #91524B;
+    --color-teracota-light: #BA7D66;
+    --color-beige-light: #C09E94;
+    --color-grey-light: #CCD2D2;
+}
+footer{
+    background-color: var(--color-teracota-light);
 }
