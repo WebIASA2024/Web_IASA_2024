@@ -7,3 +7,6 @@
     --color-beige-light: #C09E94;
     --color-grey-light: #CCD2D2;
 }
+body{
+    margin: 0;
+}
