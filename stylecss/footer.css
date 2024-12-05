@@ -7,4 +7,25 @@
 }
 footer{
     background-color: var(--color-teracota-light);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+#social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#social_media_links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#social_media_links div a img{
+    width: 50;
 }
