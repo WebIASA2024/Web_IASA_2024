@@ -1,12 +1,18 @@
 @import url(./header.css);
 @import url(./footer.css);
 :root{
-    --color-primary-dark: #1D2D25;
+    --color-teracota-darker:#7D3E37;
     --color-teracota-dark: #91524B;
     --color-teracota-light: #BA7D66;
     --color-beige-light: #C09E94;
-    --color-grey-light: #CCD2D2;
+    --color-beige-grey: #D9C5BC;
+    --color-nearly-white: #EDE1CF;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
+    background-color:var(--color-nearly-white);
 }
