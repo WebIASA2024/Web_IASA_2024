@@ -2,9 +2,10 @@ footer{
     background-color: var(--color-beige-grey);
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 1%;
     color: var(--color-teracota-dark);
+    flex-wrap: wrap;
 }
 
 footer a{
@@ -19,6 +20,10 @@ footer a:hover{
 footer h2{
     margin-top: 10px;
     margin-bottom: 0px;
+}
+
+.emblema-footer{
+    width:200px;
 }
 
 .location{
@@ -54,4 +59,16 @@ footer h2{
 
 #social_media_links div a img{
     width: 50;
+}
+
+@media only screen and (max-width: 480px) {
+    footer{
+        justify-content: baseline;
+    }
+    .location{
+        width: 200px;
+    }
+    .phone{
+        width: 200px;
+    }
 }

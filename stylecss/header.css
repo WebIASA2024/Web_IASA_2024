@@ -13,6 +13,10 @@ header nav{
     margin-left: 10px;
 }
 
+.emblema img{
+    width: 200px;
+}
+
 .links{
     margin-right: 20px;
     display: flex;
@@ -56,3 +60,22 @@ header nav{
 
 
 
+@media only screen and (max-width: 480px) {
+    .emblema img{
+        width: 100px;
+    }
+    .a{
+        display: none;
+    }
+    .links-inner button{
+        height: 18px;
+        font-size: 15;
+        line-height: 0;
+    }
+    .links{
+        flex-grow: 0;
+    }
+    header nav{
+        justify-content: space-evenly;
+    }
+}
