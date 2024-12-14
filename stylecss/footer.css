@@ -43,21 +43,21 @@ footer h2{
     margin-bottom: 0;
 }
 
-#social_media{
+.social_media{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-#social_media_links{
+.social_media_links{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-#social_media_links div a img{
+.social_media_links div a img{
     width: 50;
 }
 
