@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="./stylecss/main.css"/>
 </head>
 <body>
-    <header class="header">
+    <header>
         <nav>
-            <span>
+            <div class="emblema">
                 <a href="./index.html">
-                    <img src="./images/emblema.png" alt="Кнопка виходу на головну сторінку" width="150">
-                    </a>
-                </span>
-            <a href="#services">Послуги</a>
-            <a href="#shop">Магазин</a>
-            <a href="#reviews">Відгуки</a>
-            <button id="openButtonForm">Зв'язатись</button>
+                    <img src="./images/emblema.png" alt="Кнопка виходу на головну сторінку" width="200">
+                </a>
+            </div>
+            <div class="links">
+            <div class="links-inner"><a class="links-a" href="#services">Послуги</a></div>
+            <div class="links-inner"><a class="links-a" href="#shop">Магазин</a></div>
+            <div class="links-inner"><a class="links-a" href="#reviews">Відгуки</a></div>
+            <div class="links-inner"><button id="openButtonForm" class="contact_button">Зв'язатись</button></div>
+            </div>
         </nav>
     </header>
     
@@ -39,19 +41,21 @@
         </section>
     
         <section id="services">
-            <h1>Послуги клініки</h1>
-            <a href="./partials/services/services_aesthetic.html">
-                <img src="./images/aethetics_cosm.jpg" alt="Тут буде картинка для естетичної косметології" width="150">
-                <span>Естетична косметологія</span>
-            </a>
-            <a href="./partials/services/services_hardware.html">
-                <img src="./images/aparat_cosm.jpg" alt="Тут буде картинка для апаратної косметології" width="150">
-                <span>Апаратна косметологія</span>
-            </a>
-            <a href="./partials/services/services_inject.html">
-                <img src="./images/injective_cosm.jpg" alt="Тут буде картинка для ін'єкційної косметології" width="150">
-                <span>Ін'єкційна косметологія</span>
-            </a>
+            <h1 class="services-title">Послуги клініки</h1>
+            <div class="services-container">
+                <a class="service-button" href="./partials/services/services_aesthetic.html">
+                    <img src="./images/aethetics_cosm.jpg" alt="Тут буде картинка для естетичної косметології" width="150">
+                    <span>Естетична косметологія</span>
+                </a>
+                <a class="service-button" href="./partials/services/services_hardware.html">
+                    <img src="./images/aparat_cosm.jpg" alt="Тут буде картинка для апаратної косметології" width="150">
+                    <span>Апаратна косметологія</span>
+                </a>
+                <a class="service-button" href="./partials/services/services_inject.html">
+                    <img src="./images/injective_cosm.jpg" alt="Тут буде картинка для ін'єкційної косметології" width="150">
+                    <span>Ін'єкційна косметологія</span>
+                </a>
+            </div>
         </section>
     
         <section id="shop">
@@ -101,21 +105,28 @@
     
     </main>
     <footer id="=contacts">
-        <div>
-            <blockquote><h2>Зв'яжіться з нами</h2></blockquote>
-            <p>Phone</p>
-            <a href="tel:+1234567890"><b>+123-456-78-90</b></a>
-            <p>Email</p>
-            <a href="mailto:examplemail@email.org"><b>name@email.com</b></a>
-            <p>Address</p>
-            <a href="https://maps.app.goo.gl/KUZNQT1GrH1TAQYc9"><b>Київ, вул.Жилянська 31</b></a>
+        <div class="location">
+            <h2>Address</h2>
+            <a class="unclapped_margin" href="https://maps.app.goo.gl/KUZNQT1GrH1TAQYc9"><b>Київ, вул.Жилянська 31</b></a>
             <div>
                 <span><img src="./images/metro.png" alt="Емблема метрополітена" width="15"></span>
                 <b>Олімпійська</b>
             </div>
         </div>
-        <a href="https://www.tiktok.com/@dr.ovcharenko?_t=8qtqBxTkLOX&_r=1"><img src="./images/tiktok.png" alt="tik tok" width="30"></a>
-        <a href="https://www.instagram.com/cosmetology_dr.ovcharenko/"><img src="./images/instagram.png" alt="instagram" width="30"></a>
-    </footer>  
+        <div class="phone">
+            <h2>Зв'яжіться з нами</h2>
+            <p class="unclapped_margin"><b>Phone</b></p>
+            <a href="tel:+1234567890"><b>+123-456-78-90</b></a>
+            <p class="unclapped_margin"><b>Email</b></p>
+            <a href="mailto:examplemail@email.org"><b>name@email.com</b></a>
+        </div>
+        <div id="social_media">
+            <div><img src="./images/emblema.png" alt="Емблема клініки" width="200"></div>
+            <div id="social_media_links">
+                <div><a href="https://www.tiktok.com/@dr.ovcharenko?_t=8qtqBxTkLOX&_r=1"><img src="./images/tiktok.png" alt="tik tok" width="40"></a></div>
+                <div><a href="https://www.instagram.com/cosmetology_dr.ovcharenko/"><img src="./images/instagram.png" alt="instagram" width="40"></a></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

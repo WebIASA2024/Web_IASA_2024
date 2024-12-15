@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./main_menu.css);
 :root{
     --color-teracota-darker:#7D3E37;
     --color-teracota-dark: #91524B;
