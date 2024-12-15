@@ -4,89 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .items{
-           border:1px solid black; 
-        }
-    </style>
+    <link rel="stylesheet" href="./../stylecss/main.css">
+    <link rel="stylesheet" href="./../stylecss/shop.css">
 </head>
 <body>
     <header>
         <nav>
-            <span>
+            <div class="emblema">
                 <a href="./../index.html">
-                    <img src="./../images/emblema.png" alt="Кнопка виходу на головну сторінку" width="150">
+                    <img src="./../images/emblema.png" alt="Кнопка виходу на головну сторінку">
                 </a>
-            </span>
-            <a href="./../index.html#services">Послуги</a>
-            <a href="./shop.html">Магазин</a>
-            <a href="./../index.html#reviews">Відгуки</a>
-            <button id="openFormBtn">Зв'язатись</button>
+            </div>
+            <div class="links">
+            <div class="links-inner a"><a class="links-a" href="./../index.html#services">Послуги</a></div>
+            <div class="links-inner a"><a class="links-a" href="./shop.html">Магазин</a></div>
+            <div class="links-inner a"><a class="links-a" href="./../index.html#reviews">Відгуки</a></div>
+            <div class="links-inner"><button id="openFormBtn" class="contact_button">Зв'язатись</button></div>
+            </div>
         </nav>
     </header>
     
-    <div class="items">
-        <div><img src="./../images/Cream_white.jpg" alt="Фото крема" width="150"></div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
-
-        </div>
-    </div>
-    <div class="items">
-        <div><img src="./../images/Cream_blue.jpg" alt="Фото крема" width="150"> </div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
-        </div>
-    </div>
-    <div class="items">
-        <div><img src="./../images/Cream_red.jpg" alt="Фото крема" width="150"> </div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
-        </div>
-    </div>
-    <div class="items">
-        <div><img src="./../images/Cream_orange.jpg" alt="Фото крема" width="150"> </div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
-        </div>
-    </div>
-    <div class="items">
-        <div><img src="./../images/Cream_dark_green.jpg" alt="Фото крема" width="150"> </div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
-        </div>
-    </div>
-    <div class="items">
-        <div><img src="./../images/Cream_salad.jpg" alt="Фото крема" width="150"> </div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
-        </div>
-    </div>
-        <div class="items">
-        <div><img src="./../images/Cream_yellow.jpg" alt="Фото крема" width="150"> </div>
-        <div>
-            <div>Назва</div>
-            <div>Артикул</div>
-            <div>Опис</div>
-            <div>300 грн</div>
+    <div class="image-centrifier">
+        <div class="items-container">
+            <div class="items-personal-container">
+                <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_white.jpg" alt="Фото крема"></div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>       
+                    </div>
+                </div>
+            </div>
+            <div class="items-personal-container">
+                <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_blue.jpg" alt="Фото крема"> </div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-personal-container">
+                <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_red.jpg" alt="Фото крема"> </div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-personal-container">
+                <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_orange.jpg" alt="Фото крема"> </div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-personal-container">
+                <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_dark_green.jpg" alt="Фото крема"> </div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>
+                    </div>
+                </div>
+            </div>
+            <div class="items-personal-container">
+                <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_salad.jpg" alt="Фото крема"> </div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>
+                    </div>
+                </div>
+            </div>
+                <div class="items-personal-container">
+                    <div class="items">
+                    <div class="image-wraper"><img class="cream-image" src="./../images/Cream_yellow.jpg" alt="Фото крема"> </div>
+                    <div class="items-description">
+                        <div>Назва</div>
+                        <div>Артикул</div>
+                        <div>300 грн</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- <button id="openDialog">Test dialog</button> -->
@@ -112,21 +121,29 @@
     </script> -->
 
     <footer id="=contacts">
-        <div>
-            <blockquote><h2>Зв'яжіться з нами</h2></blockquote>
-            <p>Phone</p>
-            <b>+123-456-78-90</b>
-            <p>Email</p>
-            <b>name@email.com</b>
-            <p>Address</p>
-            <b><a href="https://maps.app.goo.gl/KUZNQT1GrH1TAQYc9">Київ, вул.Жилянська 31</a></b>
+        <div class="social_media">
+            <div><img class="emblema-footer" src="./../images/emblema.png" alt="Емблема клініки"></div>
+            <div class="social_media_links">
+                <div><a href="https://www.tiktok.com/@dr.ovcharenko?_t=8qtqBxTkLOX&_r=1"><img src="./../images/tiktok.png" alt="tik tok" width="40"></a></div>
+                <div><a href="https://www.instagram.com/cosmetology_dr.ovcharenko/"><img src="./../images/instagram.png" alt="instagram" width="40"></a></div>
+            </div>
+        </div>
+        
+        <div class="phone">
+            <h2>Зв'яжіться з нами</h2>
+            <p class="unclapped_margin"><b>Phone</b></p>
+            <a href="tel:+1234567890"><b>+123-456-78-90</b></a>
+            <p class="unclapped_margin"><b>Email</b></p>
+            <a href="mailto:examplemail@email.org"><b>name@email.com</b></a>
+        </div>
+        <div class="location">
+            <h2>Address</h2>
+            <a class="unclapped_margin" href="https://maps.app.goo.gl/KUZNQT1GrH1TAQYc9"><b>Київ, вул.Жилянська 31</b></a>
             <div>
                 <span><img src="./../images/metro.png" alt="Емблема метрополітена" width="15"></span>
                 <b>Олімпійська</b>
             </div>
         </div>
-        <a href="https://www.tiktok.com/@dr.ovcharenko?_t=8qtqBxTkLOX&_r=1"><img src="./../images/tiktok.png" alt="tik tok" width="30"></a>
-        <a href="https://www.instagram.com/cosmetology_dr.ovcharenko/"><img src="./../images/instagram.png" alt="instagram" width="30"></a>
     </footer>
 </body>
 </html>

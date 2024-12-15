@@ -18,7 +18,7 @@ header nav{
 }
 
 .links{
-    margin-right: 20px;
+    margin-right: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -62,20 +62,21 @@ header nav{
 
 @media only screen and (max-width: 480px) {
     .emblema img{
-        width: 100px;
+        width: 150px;
     }
     .a{
         display: none;
     }
     .links-inner button{
-        height: 18px;
-        font-size: 15;
+        height: 30px;
         line-height: 0;
+        width: 120px;
+        padding: 0;
     }
     .links{
         flex-grow: 0;
     }
     header nav{
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 }
