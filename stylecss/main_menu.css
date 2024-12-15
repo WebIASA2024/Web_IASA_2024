@@ -1,65 +1,91 @@
+/* Секція послуг */
 #services {
-    text-align: center; /* Центрує заголовок та контент */
-    padding: 20px;
+    text-align: center; /* Центрує заголовок і контент */
+    padding: 20px; /* Додає відступи всередині секції */
 }
 
+/* Заголовок секції */
 .services-title {
-    font-size: 32px;
-    margin-bottom: 20px; /* Додає відступ між заголовком та кнопками */
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 32px; /* Розмір шрифту заголовка */
+    margin-bottom: 20px; /* Відступ знизу для розділення з кнопками */
+    text-transform: uppercase; /* Перетворює текст на великі літери */
+    font-weight: bold; /* Робить текст жирним */
 }
 
+/* Контейнер для кнопок */
 .services-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Відстань між кнопками */
-    flex-wrap: wrap; /* Дозволяє переносити кнопки на новий рядок, якщо бракує місця */
+    display: flex; /* Встановлює гнучке розташування елементів */
+    justify-content: center; /* Центрує кнопки по горизонталі */
+    gap: 30px; /* Встановлює відстань між кнопками */
+    flex-wrap: wrap; /* Дозволяє перенесення кнопок на новий рядок при обмеженій ширині */
 }
 
+/* Оформлення кнопок */
 .service-button {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 10px;
+    width: 300px; /* Ширина кнопки */
+    height: 200px; /* Висота кнопки */
+    overflow: hidden; /* Ховає частини зображення, які виходять за межі кнопки */
+    border-radius: 10px; /* Закруглення кутів */
+    position: relative; /* Дозволяє позиціонувати псевдоелементи всередині */
+    cursor: pointer; /* Змінює курсор на "руку" при наведенні */
 }
 
+/* Зображення в кнопці */
 .service-button img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: 100%; /* Зображення займає всю ширину кнопки */
+    height: 100%; /* Зображення займає всю висоту кнопки */
+    object-fit: cover; /* Зберігає пропорції зображення і обрізає зайве */
+    display: block; /* Забирає зайві відступи, які можуть з'явитися через inline-стиль */
+    transition: opacity 0.3s ease; /* Додає плавність ефекту затемнення */
 }
 
-.service-button span {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 8px;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px;
-}
-.service-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 0, 0, 0.6);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+/* Ефект затемнення при наведенні */
+.service-button::after {
+    content: ''; /* Створює порожній псевдоелемент */
+    position: absolute; /* Позиціонування відносно контейнера кнопки */
+    top: 0; /* Прив'язка до верхнього краю */
+    left: 0; /* Прив'язка до лівого краю */
+    width: 100%; /* Займає всю ширину кнопки */
+    height: 100%; /* Займає всю висоту кнопки */
+    background: rgba(0, 0, 0, 0.4); /* Напівпрозорий чорний фон для ефекту затемнення */
+    opacity: 0; /* Спочатку затемнення непомітне */
+    transition: opacity 0.3s ease; /* Додає плавний перехід ефекту */
 }
 
-.service-button:hover::before {
-    transform: translateX(0);
-}
-
+/* Ефект затемнення при наведенні миші */
 .service-button:hover img {
-    opacity: 0.7;
+    opacity: 0.7; /* Зменшує прозорість зображення */
+}
+
+.service-button:hover::after {
+    opacity: 1; /* Робить затемнення повністю видимим */
+}
+
+/* Текст на кнопці */
+.service-button span {
+    position: absolute; /* Позиціонує текст поверх зображення */
+    bottom: 10px; /* Відступ від нижнього краю кнопки */
+    left: 10px; /* Відступ від лівого краю */
+    right: 10px; /* Відступ від правого краю */
+    background-color: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон для тексту */
+    color: #fff; /* Білий колір тексту */
+    padding: 8px; /* Внутрішні відступи всередині блоку з текстом */
+    font-size: 14px; /* Розмір шрифту тексту */
+    text-align: center; /* Центрує текст по горизонталі */
+    border-radius: 5px; /* Закруглення кутів текстового блоку */
+}
+@media only screen and (max-width: 480px) {
+    .face_inside_image{
+        width: 100px;
+    }
+    .image-container{
+        width: 100px;
+        height: 100px;
+    }
+    .thumbnail{
+        width: 100px;
+    }
+    .face_inside{
+        font-size: x-small;
+    }
 }
