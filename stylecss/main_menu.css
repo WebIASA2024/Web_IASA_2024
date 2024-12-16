@@ -74,18 +74,3 @@
     text-align: center; /* Центрує текст по горизонталі */
     border-radius: 5px; /* Закруглення кутів текстового блоку */
 }
-@media only screen and (max-width: 480px) {
-    .face_inside_image{
-        width: 100px;
-    }
-    .image-container{
-        width: 100px;
-        height: 100px;
-    }
-    .thumbnail{
-        width: 100px;
-    }
-    .face_inside{
-        font-size: x-small;
-    }
-}
