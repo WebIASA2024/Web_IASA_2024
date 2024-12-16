@@ -1,3 +1,48 @@
+/*Про лікаря.Вступ*/
+/* Стилізація контейнера */
+.hero-container {
+    display: flex;            /* Вирівнювання елементів у рядок */
+    align-items: center;      /* Центрування по вертикалі */
+    justify-content: space-between; 
+    gap: 10px;                /* Відстань між елементами */
+    padding: 20px;
+}
+
+/* Зображення та кнопка */
+.hero-image-container {
+    display: flex;
+    flex-direction: column;      /* Розташування зображення та кнопки вертикально */
+    align-items: center;         /* Вирівнювання по центру */
+    width: 50%;                  /* Ширина зображення + кнопки */
+}
+
+/* Стилізація зображення */
+.hero-image {
+    width: 90%;              /* Збільшення розміру зображення */
+    max-width: 600px;        /* Обмеження максимальної ширини */
+    height: auto;            /* Збереження пропорцій */
+}
+
+/* Стилізація тексту */
+.hero-text {
+    width: 50%;              /* Займає іншу половину простору */
+    font-size: 16px;         /* Розмір тексту */
+    line-height: 1.6;
+}
+
+.learn-more {
+    margin-top: 5px;            /* Відступ зверху */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #EDE1CF;
+    background-color:#7D3E37;   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
 /* Секція послуг */
 #services {
     text-align: center; /* Центрує заголовок і контент */

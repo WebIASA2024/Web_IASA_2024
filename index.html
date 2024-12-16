@@ -7,6 +7,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./stylecss/main.css"/>
 
+
 </head>
 <body>
     <header>
@@ -34,12 +35,16 @@
     <!--Секції сторінки-->
     <main>
         <section id="hero">
-            <h2>Dr.Ovcharenko простір естетичної та профілактичної медицини.</h2>
-            <span>
-                <img src="./images/doc_main.jpg" alt="Лікар" width="150">
-            </span>
-            <button onclick="window.location.href='./partials/doctor_info.html'">Детальніше</button>
-        </section>
+            <div class="hero-container">
+                <h2 class="hero-text">Dr.Ovcharenko простір естетичної та профілактичної медицини.</h2>
+                <div class="hero-image-container">
+                    <span>
+                        <img class="hero-image" src="./images/doc_main.jpg" alt="Лікар" width="150">
+                    </span>
+                    <button class="learn-more" onclick="window.location.href='./partials/doctor_info.html'">Детальніше</button>
+                </div>
+            </section>
+            </div>
     
         <section id="services">
             <h1 class="services-title">Послуги клініки</h1>
