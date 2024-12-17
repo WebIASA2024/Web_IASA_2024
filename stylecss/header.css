@@ -32,6 +32,7 @@ header nav{
 .links-a{
     color: var(--color-teracota-dark);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .links-a:hover{
