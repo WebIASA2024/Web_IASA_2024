@@ -24,9 +24,17 @@
         </nav>
     </header>
     
+<dialog id="productDialog">
+    <div id="dialogContent" class="dialogContent">
+
+    </div>
+    <button tabindex="-1" onclick="document.getElementById('productDialog').close()">Закрити</button>
+</dialog>
+
+
     <div class="image-centrifier">
         <div class="items-container">
-            <div class="items-personal-container">
+            <div class="items-personal-container" onclick="showDialog('BARRIER RESTORING HYDRATING CREAM')">
                 <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_white.jpg" alt="Фото крема"></div>
                     <div class="items-description">
@@ -36,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="items-personal-container">
+            <div class="items-personal-container" onclick="showDialog('HAPCA FILLER')">
                 <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_blue.jpg" alt="Фото крема"> </div>
                     <div class="items-description">
@@ -46,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="items-personal-container">
+            <div class="items-personal-container" onclick="showDialog('Azid')">
                 <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_red.jpg" alt="Фото крема"> </div>
                     <div class="items-description">
@@ -56,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="items-personal-container">
+            <div class="items-personal-container" onclick="showDialog('C-TETRA Е.F.')">
                 <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_orange.jpg" alt="Фото крема"> </div>
                     <div class="items-description">
@@ -66,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="items-personal-container">
+            <div class="items-personal-container" onclick="showDialog('CLINICAL VITAMIN A')">
                 <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_dark_green.jpg" alt="Фото крема"> </div>
                     <div class="items-description">
@@ -76,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="items-personal-container">
+            <div class="items-personal-container" onclick="showDialog('SMOOTHING TREATMENT')">
                 <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_salad.jpg" alt="Фото крема"> </div>
                     <div class="items-description">
@@ -86,7 +94,7 @@
                     </div>
                 </div>
             </div>
-                <div class="items-personal-container">
+                <div class="items-personal-container" onclick="showDialog('LINO-8')">
                     <div class="items">
                     <div class="image-wraper"><img class="cream-image" src="./../images/Cream_yellow.jpg" alt="Фото крема"> </div>
                     <div class="items-description">
@@ -98,27 +106,9 @@
             </div>
         </div>
     </div>
-    <!-- <button id="openDialog">Test dialog</button> -->
 
-    <dialog id="myDialog">
-        <iframe src="./shop_info.html"></iframe>
-    </dialog>
 
-    <!-- <script>
-        const dialog = document.getElementById('myDialog');
-        const openDialogButton = document.getElementById('openDialog');
-        const closeDialogButton = document.getElementById('closeDialog');
 
-        // Відкриття діалогового вікна
-        openDialogButton.addEventListener('click', () => {
-            dialog.showModal(); // Показати діалогове вікно
-        });
-
-        // Закриття діалогового вікна
-        closeDialogButton.addEventListener('click', () => {
-            dialog.close(); // Закрити діалогове вікно
-        });
-    </script> -->
 
     <footer id="=contacts">
         <div class="social_media">
@@ -145,5 +135,6 @@
             </div>
         </div>
     </footer>
+    <script src="./../scripts/shop_items.js"></script>
 </body>
 </html>
