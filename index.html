@@ -14,7 +14,7 @@
         <nav>
             <div class="emblema">
                 <a href="./index.html">
-                    <img src="./images/emblema.png" alt="Кнопка виходу на головну сторінку" width="200">
+                    <img src="./images/emblema.png" alt="Кнопка виходу на головну сторінку">
                 </a>
             </div>
             <div class="links">
@@ -63,26 +63,40 @@
         </section>
     
         <section id="shop">
-            <h1>Магазин</h1>
-            <div>
-                <div><img src="./images/cream_item.jpg" alt="Фото крема" width="150"> </div>
-                <div>
-                    <div>Назва</div>
-                    <div>Артикул</div>
-                    <div>Опис</div>
-                    <div>300 грн</div>
+            <h1 class="shop-title" >Магазин</h1>
+            <div class="menu-items-container">
+                <div class="menu-items-personal-container">
+                    <div class="menu-items">
+                        <div class="menu-image-wraper"><img class="menu-cream-image" src="./images/Cream_white.jpg" alt="Фото крема"></div>
+                        <div class="menu-items-description">
+                            <div>Назва</div>
+                            <div>Артикул</div>
+                            <div>300 грн</div>       
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-items-personal-container">
+                    <div class="menu-items">
+                        <div class="menu-image-wraper"><img class="menu-cream-image" src="./images/Cream_blue.jpg" alt="Фото крема"> </div>
+                        <div class="menu-items-description">
+                            <div>Назва</div>
+                            <div>Артикул</div>
+                            <div>300 грн</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-items-personal-container">
+                    <div class="menu-items">
+                        <div class="menu-image-wraper"><img class="menu-cream-image" src="./images/Cream_red.jpg" alt="Фото крема"> </div>
+                        <div class="menu-items-description">
+                            <div>Назва</div>
+                            <div>Артикул</div>
+                            <div>300 грн</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div><img src="./images/cream_item.jpg" alt="Фото крема" width="150"> </div>
-                <div>
-                    <div>Назва</div>
-                    <div>Артикул</div>
-                    <div>Опис</div>
-                    <div>300 грн</div>
-                </div>
-            </div>
-            <button onclick="window.location.href='./partials/shop.html'">Показати все</button>
+            <button class="show-all" onclick="window.location.href='./partials/shop.html'">Показати все</button>
         </section>
 
         <section id="galery">

@@ -37,13 +37,15 @@
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color:#7D3E37;   
+    background-color: var(--color-teracota-dark);   
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+.learn-more:hover{
+    background-color: var(--color-teracota-darker)
+}
 
 /* Секція послуг */
 #services {
@@ -54,7 +56,7 @@
 /* Заголовок секції */
 .services-title {
     font-size: 32px; /* Розмір шрифту заголовка */
-    margin-bottom: 20px; /* Відступ знизу для розділення з кнопками */
+    margin-bottom: 30px; /* Відступ знизу для розділення з кнопками */
     text-transform: uppercase; /* Перетворює текст на великі літери */
     font-weight: bold; /* Робить текст жирним */
 }
@@ -63,7 +65,7 @@
 .services-container {
     display: flex; /* Встановлює гнучке розташування елементів */
     justify-content: center; /* Центрує кнопки по горизонталі */
-    gap: 30px; /* Встановлює відстань між кнопками */
+    gap: 50px; /* Встановлює відстань між кнопками */
     flex-wrap: wrap; /* Дозволяє перенесення кнопок на новий рядок при обмеженій ширині */
 }
 
@@ -121,18 +123,105 @@
     text-align: center; /* Центрує текст по горизонталі */
     border-radius: 5px; /* Закруглення кутів текстового блоку */
 }
+
+/* Магазин */
+#shop {
+    text-align: center; /* Центрує заголовок і контент */
+    padding: 20px; /* Додає відступи всередині секції */
+}
+
+/* Заголовок секції */
+.shop-title {
+    font-size: 32px; /* Розмір шрифту заголовка */
+    margin-bottom: 30px; /* Відступ знизу для розділення з кнопками */
+    text-transform: uppercase; /* Перетворює текст на великі літери */
+    font-weight: bold; /* Робить текст жирним */
+}
+.menu-items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-items-personal-container{
+    background-color: white;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+}
+.menu-items:hover{
+    cursor: pointer;
+    border: solid black 2px;
+    border-radius: 30px;
+}
+.menu-image-wraper{
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+} 
+
+.menu-cream-image{
+    width: 300px;
+    object-fit: cover;
+}
+
+.menu-items-description{
+    padding: 5px;
+}
+
+.show-all{
+    margin-top: 5px;            /* Відступ зверху */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--color-teracota-dark);   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.show-all:hover{
+    background-color: var(--color-teracota-darker)
+}
+
 @media only screen and (max-width: 480px) {
     .hero-image {
-        width: 150px;              /* Збільшення розміру зображення */
+        width: 200px;              /* Збільшення розміру зображення */
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     } 
     .hero-text {
-        font-size: 15px;         /* Розмір тексту */
+        font-size: 10px;         /* Розмір тексту */
     }
     .learn-more {
         margin-top: 3px;            /* Відступ зверху */
-        padding: 5px 10px;
-        font-size: 8px;
+        padding: 8px 18px;
+        font-size: 10px;
+    }
+    .services-title {
+        font-size: 16px; /* Розмір шрифту заголовка */
+        margin-bottom: 15px; /* Відступ знизу для розділення з кнопками */
+    }
+    .services-container {
+        gap: 10px; /* Встановлює відстань між кнопками */
+    }
+    .service-button {
+        width: 150px; /* Ширина кнопки */
+        height: 100px; /* Висота кнопки */
+    }
+    .service-button span {
+        bottom: 5px; /* Відступ від нижнього краю кнопки */
+        left: 5px; /* Відступ від лівого краю */
+        right: 5px; /* Відступ від правого краю */
+        padding: 8px; /* Внутрішні відступи всередині блоку з текстом */
+        font-size: 7px; /* Розмір шрифту тексту */
+        border-radius: 3px; /* Закруглення кутів текстового блоку */
     }
     
 }

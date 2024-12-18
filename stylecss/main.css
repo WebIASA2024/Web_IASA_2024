@@ -3,6 +3,8 @@
 @import url(./footer.css);
 @import url(./main_menu.css);
 @import url(./doctor_info.css);
+@import url(./servicesCss/services_aesthetic.css);
+@import url(./servicesCss/services.css);
 :root{
     --color-teracota-darker:#7D3E37;
     --color-teracota-dark: #91524B;
