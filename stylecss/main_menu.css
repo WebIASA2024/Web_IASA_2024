@@ -54,7 +54,7 @@
 }
 
 /* Заголовок секції */
-.services-title {
+.menu-services-title {
     font-size: 32px; /* Розмір шрифту заголовка */
     margin-bottom: 30px; /* Відступ знизу для розділення з кнопками */
     text-transform: uppercase; /* Перетворює текст на великі літери */
@@ -62,7 +62,7 @@
 }
 
 /* Контейнер для кнопок */
-.services-container {
+.menu-services-container {
     display: flex; /* Встановлює гнучке розташування елементів */
     justify-content: center; /* Центрує кнопки по горизонталі */
     gap: 50px; /* Встановлює відстань між кнопками */
