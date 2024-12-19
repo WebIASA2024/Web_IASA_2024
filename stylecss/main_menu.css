@@ -191,6 +191,12 @@
     background-color: var(--color-teracota-darker)
 }
 
+/*До/після*/
+#galery{
+    text-align: center; /* Центрує заголовок і контент */
+    padding: 20px; /* Додає відступи всередині секції */
+}
+
 @media only screen and (max-width: 480px) {
     .hero-image {
         width: 200px;              /* Збільшення розміру зображення */
