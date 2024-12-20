@@ -100,15 +100,44 @@
         </section>
 
         <section id="galery">
-            <h1>До/Після</h1>
-            <span>
-                <img src="./images/beforeAfter1.jpg" alt="До/після 1" width="150">
-            </span>
-        </section>
+            <h1 class="galery-title">До/Після</h1>
+            <div class="galery-container">
+                <div class="galery-change">
+                  <img src="./images/before1.jpg" class="before" alt="До 1">
+                  <img src="./images/after1.jpg" class="after" alt="Після 1">
+                </div>
 
-        <section id="reviews">
-            <h1>Відгуки</h1>
-            <div>
+                <div class="galery-change">
+                    <img src="./images/before2.jpg" class="before" alt="До 2">
+                    <img src="./images/after2.jpg" class="after" alt="Після 2">
+                </div>
+            </div>
+        </section>
+          
+
+        <div class="container">
+            <!-- Форма для відгуків -->
+            <div class="form-section">
+                <h2>Залишити відгук</h2>
+                <form id="reviewForm">
+                    <input type="text" id="name" placeholder="Ваше ім'я" required>
+                    <textarea id="message" placeholder="Ваш відгук" required></textarea>
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+    
+            <!-- Відгуки зі стрілками -->
+            <div class="reviews-section">
+                <h2>Відгуки</h2>
+                <div class="reviews-wrapper">
+                    <button class="nav-btn prev-btn">‹</button>
+                    <ul id="reviewsList" class="reviews-list"></ul>
+                    <button class="nav-btn next-btn">›</button>
+                </div>
+            </div>
+        </div>
+            
+            <!-- <div>
                 Добрий вечір!
                 Я такаааа задоволена)
                 Дякую, шкіра чудово, ніяких почервонінь, висипання пройшли
@@ -118,7 +147,7 @@
             <div>
                 Доброго дня, після чистки все чудово. Різниця разюча. Окрема подяка за тонік, підібрали те, що треба, шкіра просто сяє і це менше ніж за тиждень користування! :)
                 Дякую...
-            </div>
+            </div>-->
         </section>
     
     </main>
@@ -147,5 +176,7 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/index_galery.js"></script>
+    <script src="./scripts/review.js"></script>
 </body>
 </html>

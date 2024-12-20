@@ -192,11 +192,153 @@
 }
 
 /*До/після*/
-#galery{
+/* Загальний стиль для галереї */
+#galery {
     text-align: center; /* Центрує заголовок і контент */
-    padding: 20px; /* Додає відступи всередині секції */
+    padding: 20px; /* Відступи всередині секції */
+  }
+  
+.galery-title {
+    font-size: 32px; /* Розмір шрифту заголовка */
+    margin-bottom: 50px; /* Відступ знизу */
+    text-transform: uppercase; /* Великі літери */
+    font-weight: bold; /* Жирний шрифт */
+}
+  
+  /* Блок "До/Після" */
+.galery-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.galery-change {
+    position: relative;
+    width: 500px; /* Ширина блоку */
+    height: 400px; /* Висота блоку */
+    margin: 0 auto; /* Центрування блоку */
+    overflow: hidden; /* Приховує те, що виходить за межі */
+    border-radius: 10px; /* Закруглені краї */
+    border: 2px solid #ccc; /* Сіра рамка */
+}
+  
+.galery-change img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабування зображень */
+    transition: opacity 1s ease; /* Плавний перехід */
+}
+  
+.galery-change .after {
+    opacity: 0; /* Початково приховано */
+}
+
+  /*Відгуки*/
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section, .reviews-section {
+    width: 48%;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.reviews-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.reviews-list {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-item {
+    min-width: 100%;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.review-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.review-item p {
+    color: #555;
+}
+
+.nav-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.nav-btn:hover {
+    background: #0056b3;
+}
+
+
+  
 @media only screen and (max-width: 480px) {
     .hero-image {
         width: 200px;              /* Збільшення розміру зображення */
