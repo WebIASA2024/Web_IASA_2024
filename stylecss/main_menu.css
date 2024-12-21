@@ -48,7 +48,7 @@
 }
 
 /* Секція послуг */
-#services {
+.services {
     text-align: center; /* Центрує заголовок і контент */
     padding: 20px; /* Додає відступи всередині секції */
 }
@@ -125,7 +125,7 @@
 }
 
 /* Магазин */
-#shop {
+.shop {
     text-align: center; /* Центрує заголовок і контент */
     padding: 20px; /* Додає відступи всередині секції */
 }
@@ -193,7 +193,7 @@
 
 /*До/після*/
 /* Загальний стиль для галереї */
-#galery {
+.galery {
     text-align: center; /* Центрує заголовок і контент */
     padding: 20px; /* Відступи всередині секції */
   }
@@ -237,29 +237,35 @@
 }
 
   /*Відгуки*/
-  * {
+.reviews{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    text-align: center; /* Центрує заголовок і контент */
+    padding: 20px; /* Відступи всередині секції */
 }
 
-.container {
+.reviews-container {
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
     margin: auto;
-    background: #fff;
     padding: 20px;
     border-radius: 8px;
+    background-color: var(--color-beige-grey);
+}
+
+.form-section{
+    width: 50%;
+}
+.reviews-section {
+    width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-section, .reviews-section {
-    width: 48%;
-}
-
-h2 {
-    margin-bottom: 15px;
+.reviews-title {
+    font-size: 32px; /* Розмір шрифту заголовка */
+    margin-bottom: 50px; /* Відступ знизу */
+    text-transform: uppercase; /* Великі літери */
+    font-weight: bold; /* Жирний шрифт */
 }
 
 form {
