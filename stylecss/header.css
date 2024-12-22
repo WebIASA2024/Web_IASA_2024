@@ -68,11 +68,14 @@ header nav{
     .a{
         display: none;
     }
-    .links-inner button{
+    .contact_button{
         height: 30px;
         line-height: 0;
         width: 120px;
         padding: 0;
+    }
+    .contact_button:hover{
+    background-color: var(--color-teracota-darker)
     }
     .links{
         flex-grow: 0;
