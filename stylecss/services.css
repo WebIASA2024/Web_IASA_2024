@@ -73,3 +73,33 @@
 .services-button-signUpForm:hover{
     background-color: var(--color-teracota-darker);
 }
+
+@media only screen and (max-width: 480px) {
+    .services-block{
+        padding: 10px;
+    }
+    .services-main-title{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .services-container{
+        margin: 10px auto; /* Центрування блоку */
+        padding: 10px;
+        max-width: 300px; /* Максимальна ширина блоку */
+        border: 3px solid var(--color-teracota-dark);
+        box-shadow: 0 6px 15px 4px rgba(0,0,0,0.1); /* Тінь для глибини */
+    }
+    .services-price{
+        font-size: 12px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    .services-button-signUpForm{
+        font-weight: 150;
+        font-size: 12px;
+        box-shadow: 0 6px 15px 4px rgba(0,0,0,0.1);
+        padding: 10px 18px 10px;
+        line-height: 1.1;
+        border-radius: 8px;
+    }
+}
