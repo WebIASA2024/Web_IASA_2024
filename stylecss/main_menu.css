@@ -236,111 +236,129 @@
     opacity: 0; /* Початково приховано */
 }
 
-  /*Відгуки*/
-.reviews{
+ /* Відгуки */
+.reviews {
     box-sizing: border-box;
-    text-align: center; /* Центрує заголовок і контент */
-    padding: 20px; /* Відступи всередині секції */
+    text-align: center;
+    padding: 20px;
     background-color: var(--color-beige-grey);
 }
 
 .reviews-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-}
-
-.form-section{
-    width: 45%;
-    border: 3px solid var(--color-teracota-dark);
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
-}
-.reviews-section {
-    width: 45%;
-    border: 3px solid var(--color-teracota-dark);
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
-}
-
-.reviews-main-container{
-    display: flex;
     justify-content: space-evenly;
+    gap: 10px; /* Відстань між формою та відгуками */
+    width: 100%;
 }
 
-.reviews-title {
-    font-size: 32px; /* Розмір шрифту заголовка */
-    margin-bottom: 50px; /* Відступ знизу */
-    text-transform: uppercase; /* Великі літери */
-    font-weight: bold; /* Жирний шрифт */
-}
-
-form {
+.form-section, .reviews-section {
+    width: 45%;
+    height: 400px; /* Фіксована висота */
+    border: 3px solid var(--color-teracota-dark);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-input, textarea, button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid var(--color-nearly-white);
-    border-radius: 4px;
+/* Заголовок */
+.reviews-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-button {
-
-    background: var(--color-teracota-dark);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: var(--color-teracota-darker);
-}
-
+/* Контент секції відгуків */
 .reviews-wrapper {
     position: relative;
     display: flex;
-    align-items: center;
+    height: 100%;
 }
 
 .reviews-list {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .review-item {
-    min-width: 100%;
-    padding: 20px;
-    background: #f1f1f1;
     border-radius: 5px;
+    padding: 10px;
     text-align: left;
-}
-
-.review-item h3 {
-    margin-bottom: 5px;
     color: #333;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
+/* Обмеження на кількість слів у відгуках */
 .review-item p {
-    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Навігаційні кнопки */
+.nav-buttons-container {
+    position: absolute;
+    bottom: 3px; /* Притиснуто до нижньої границі */
+    right: 3px; /* Притиснуто до правої границі */
+    display: flex;
+    gap: 5px;
 }
 
 .nav-btn {
     background: var(--color-teracota-dark);
     color: white;
     border: none;
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 5px 10px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .nav-btn:hover {
+    background: var(--color-teracota-darker);
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-nearly-white);
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px; /* Фіксована висота для тексту */
+    resize: none; /* Заборонити зміну розміру */
+}
+
+button {
+    background: var(--color-teracota-dark);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 auto; /* Центрування кнопки */
+    display: block;
+}
+
+button:hover {
     background: var(--color-teracota-darker);
 }
 
