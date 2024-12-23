@@ -6,6 +6,7 @@
     <title>Інформація про лікаря</title>
     <link rel="stylesheet" href="./../stylecss/main.css">
     <link rel="stylesheet" href="./../stylecss/doctor_info.css">
+    <!-- <link rel="stylesheet" href="./../stylecss/main_menu.css"> -->
     <link rel="preload" href="./../images/Sert-1.png" as="image" type="png">
     <link rel="preload" href="./../images/Sert-2.png" as="image" type="png">
     <link rel="preload" href="./../images/Sert-3.png" as="image" type="png">
@@ -38,6 +39,37 @@
             </div>
         </nav>
     </header>
+    
+    <div id="formWraper" class="form-wraper">
+        <div class="form-container">
+            <div class="cls-btn-wrp"><button class="cls-btn" id="closeZapisForm">×</button></div>
+            <form method="dialog" class="dialog-form" id="zapisForm">
+                <h2 class="zapis-hat">Записатися на прийом</h2>
+                <div class="form-insides">
+                    <label for="name">Ваше ім'я:</label>
+                    <input class="form-inputs" type="text" id="zapisName" name="name" placeholder="Введіть ваше ім'я">
+                </div>
+
+                <div class="form-insides">
+                    <label for="phone">Ваш телефон:</label>
+                    <input class="form-inputs" type="tel" id="zapisPhone" name="phone" placeholder="+380 (XX) XXX-XXXX" pattern="\+?[0-9\s\-\(\)]{10,15}">
+                </div>
+
+                <div class="form-insides big-input">
+                    <label for="message">Коментар:</label>
+                    <textarea class="form-inputs" id="zapisMessage" name="message" placeholder="Ваші побажання або питання"></textarea>
+                </div>
+                <div class="form-insides">
+                    <label>
+                        <input type="checkbox" id="zapisAgree" name="agree">
+                        Погоджуюсь на обробку даних
+                    </label>
+                </div>
+                <button class="submit-btn" id="submitZapisBtn" type="submit">Записатися</button>
+            </form>
+        </div>
+    </div>
+    
     <article class="face_article">
         <div class="face_container">
             <div class="face-wraper"><img class="face_inside_image" src="./../images/doctor_face.jpg" alt="Доктор"></div>
@@ -151,5 +183,6 @@
         </div>
     </footer>
     <script src="./../scripts/doctor_info.js"></script>
+    <script src="./../scripts/zapis.js"></script>
 </body>
 </html>

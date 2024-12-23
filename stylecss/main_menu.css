@@ -337,25 +337,25 @@
 }
 
 /* Форма */
-form {
+.index-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-input, textarea {
+.index-input, .index-textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid var(--color-nearly-white);
     border-radius: 4px;
 }
 
-textarea {
+.index-textarea {
     height: 150px; /* Фіксована висота для тексту */
     resize: none; /* Заборонити зміну розміру */
 }
 
-button {
+.index-buttons {
     background: var(--color-teracota-dark);
     color: white;
     border: none;
