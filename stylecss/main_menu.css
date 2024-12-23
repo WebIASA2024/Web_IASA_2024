@@ -4,7 +4,7 @@
     display: flex;            /* Вирівнювання елементів у рядок */
     align-items: center;      /* Центрування по вертикалі */
     justify-content: space-around; 
-    gap: 10px;                /* Відстань між елементами */
+    gap: 20px;                /* Відстань між елементами */
     padding: 20px;
 }
 
@@ -13,19 +13,19 @@
     display: flex;
     flex-direction: column;      /* Розташування зображення та кнопки вертикально */
     align-items: center;         /* Вирівнювання по центру */
-    width: 50%;                  /* Ширина зображення + кнопки */
+    width: 48%;                  /* Ширина зображення + кнопки */
 }
 
 /* Стилізація зображення */
 .hero-image {
-    width: 500px;              /* Збільшення розміру зображення */
+    width: 75%;              /* Збільшення розміру зображення */
     height: auto;            /* Збереження пропорцій */
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Стилізація тексту */
 .hero-text {
-    width: 50%;              /* Займає іншу половину простору */
+    width: 48%;              /* Займає іншу половину простору */
     font-size: 30px;         /* Розмір тексту */
     line-height: 1.6;
     display: flex;
@@ -161,6 +161,7 @@
     border: solid black 2px;
     border-radius: 30px;
 }
+
 .menu-image-wraper{
     border: none;
     border-radius: 30px;
@@ -249,6 +250,7 @@
     justify-content: space-evenly;
     gap: 10px; /* Відстань між формою та відгуками */
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .form-section, .reviews-section {
@@ -303,6 +305,12 @@
 .review-item p {
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
+}
+.review-item h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Навігаційні кнопки */
@@ -318,8 +326,8 @@
     background: var(--color-teracota-dark);
     color: white;
     border: none;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 7px 14px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -352,10 +360,11 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 12px 30px;
     margin: 0 auto; /* Центрування кнопки */
     display: block;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -365,8 +374,12 @@ button:hover {
 
   
 @media only screen and (max-width: 480px) {
+    .hero-container{
+        padding-bottom: 0;
+    }
+    
     .hero-image {
-        width: 200px;              /* Збільшення розміру зображення */
+        width: 120%;              /* Збільшення розміру зображення */
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
     } 
     .hero-text {
@@ -374,19 +387,19 @@ button:hover {
     }
     .learn-more {
         margin-top: 3px;            /* Відступ зверху */
-        padding: 8px 18px;
+        padding: 6px 16px;
         font-size: 10px;
     }
-    .services-title {
-        font-size: 16px; /* Розмір шрифту заголовка */
-        margin-bottom: 15px; /* Відступ знизу для розділення з кнопками */
+    .menu-services-title {
+        font-size: 25px; /* Розмір шрифту заголовка */
+        margin-bottom: 20px; /* Відступ знизу для розділення з кнопками */
     }
-    .services-container {
-        gap: 10px; /* Встановлює відстань між кнопками */
+    .menu-services-container {
+        gap: 15px; /* Встановлює відстань між кнопками */
     }
     .service-button {
-        width: 150px; /* Ширина кнопки */
-        height: 100px; /* Висота кнопки */
+        width: 200px; /* Ширина кнопки */
+        height: 150px; /* Висота кнопки */
     }
     .service-button span {
         bottom: 5px; /* Відступ від нижнього краю кнопки */
@@ -396,5 +409,77 @@ button:hover {
         font-size: 7px; /* Розмір шрифту тексту */
         border-radius: 3px; /* Закруглення кутів текстового блоку */
     }
-    
+    .shop-title{
+        font-size: 25px; /* Розмір шрифту заголовка */
+        margin-bottom: 20px; /* Відступ знизу для розділення з кнопками */
+    }
+     /* Контейнер з товарами */
+     .menu-items-container {
+        flex-direction: column; /* Вертикальне розташування елементів */
+        align-items: center;    /* Центрування елементів */
+    }
+
+    /* Персональний контейнер товару */
+    .menu-items-personal-container {
+        margin: 10px auto;     /* Центрування і рівні відступи */
+        width: 60%;           /* Адаптивна ширина */
+    }
+
+    /* Елементи товару */
+    .menu-items {
+        flex-direction: column; /* Вертикальне розташування товарів */
+        width: 100%;            /* Адаптивна ширина */
+    }
+
+    /* Зображення товарів */
+    .menu-cream-image {
+        width: 100%;           /* Зображення займає всю ширину контейнера */
+        object-fit: cover;     /* Зберігає пропорції */
+    }
+
+    /* Кнопка "Показати все" */
+    .show-all {
+        font-size: 14px;       /* Зменшено шрифт кнопки */
+        padding: 8px 16px;     /* Зменшено внутрішні відступи */
+    }
+    .galery-title {
+        font-size: 25px; /* Розмір шрифту заголовка */
+        margin-bottom: 20px; /* Відступ знизу */
+    }
+    .galery-change {
+        width: 300px; /* Ширина блоку */
+        height: 200px; /* Висота блоку */
+        margin:10px;
+    }
+    .reviews-title{
+        font-size: 25px; /* Розмір шрифту заголовка */
+        margin-bottom: 20px;
+    }
+    .reviews-container{
+        flex-direction: column; /* Вертикальне розташування */
+        align-items: center; /* Вирівнювання по центру */
+    }
+    .reviews-section, .form-section {
+        width: 100%; /* Ширина 100% для вертикального розташування */
+        margin-bottom: 20px; /* Відступ між блоками */
+    }
+    input, textarea {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .review-item p {
+        font-size: 15px;
+    }
+    .review-item h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .nav-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
 }
