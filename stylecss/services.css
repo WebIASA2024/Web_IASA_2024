@@ -73,15 +73,20 @@
 .services-button-signUpForm:hover{
     background-color: var(--color-teracota-darker);
 }
+
 .learn-more-modal {
     position: fixed;
     top: 50%;
     left: 50%;
+    text-align: left;
+    overflow-y: auto;
     transform: translate(-50%, -50%);
     background-color: var(--color-beige-grey);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     z-index: 1000;
+    max-height: 80vh;
+    outline: none;
     display: none;
     max-width: 90%;
     border-radius: 10px;
@@ -97,6 +102,21 @@
     z-index: 999;
     display: none;
 }
+.learn-more-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.learn-more-content h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.learn-more-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
 
 .learn-more-clbutton {
     margin-top: 10px;
@@ -106,6 +126,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    display: block;
 }
 
 .learn-more-clbutton:hover {
