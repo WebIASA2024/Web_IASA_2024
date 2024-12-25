@@ -101,7 +101,7 @@
 .learn-more-clbutton {
     margin-top: 10px;
     padding: 10px;
-    var(--color-teracota-dark);
+    background:var(--color-teracota-dark);
     color: #fff;
     border: none;
     border-radius: 5px;
