@@ -1,24 +1,58 @@
-document.getElementById("reviewForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+// Вибір елементів DOM
+const reviewForm = document.getElementById('reviewForm');
+const reviewsList = document.getElementById('reviewsList');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-    // Зчитування даних з форми
-    const name = document.getElementById("name").value.trim();
-    const message = document.getElementById("message").value.trim();
+// Масив для зберігання відгуків
+const reviews = Array.from(reviewsList.children);
+let currentReviewIndex = 0;
+
+// Функція для оновлення видимого відгуку
+function updateVisibleReview() {
+    reviews.forEach((review, index) => {
+        review.style.display = index === currentReviewIndex ? 'block' : 'none';
+    });
+}
+
+// Ініціалізація першого відгуку
+updateVisibleReview();
+
+// Подія на стрілку "Назад"
+prevBtn.addEventListener('click', () => {
+    currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+    updateVisibleReview();
+});
+
+// Подія на стрілку "Вперед"
+nextBtn.addEventListener('click', () => {
+    currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+    updateVisibleReview();
+});
+
+// Обробка подання форми
+reviewForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Запобігаємо перезавантаженню сторінки
+
+    // Отримуємо значення з форми
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
 
     if (name && message) {
-        // Створення нового елемента відгуку
-        const reviewItem = document.createElement("li");
-        reviewItem.className = "review-item";
+        // Створюємо новий відгук
+        const newReview = document.createElement('li');
+        newReview.classList.add('review-item');
+        newReview.innerHTML = `<h3>${name}</h3><p>${message}</p>`;
 
-        reviewItem.innerHTML = `
-            <h3>${name}</h3>
-            <p>${message}</p>
-        `;
+        // Додаємо новий відгук до списку
+        reviewsList.appendChild(newReview);
+        reviews.push(newReview);
 
-        // Додавання відгуку до списку
-        document.getElementById("reviewsList").appendChild(reviewItem);
+        // Очищаємо форму
+        reviewForm.reset();
 
-        // Очищення форми
-        document.getElementById("reviewForm").reset();
+        // Оновлюємо відображення
+        currentReviewIndex = reviews.length - 1; // Показуємо новий відгук
+        updateVisibleReview();
     }
 });
