@@ -1,14 +1,41 @@
-document.getElementById('openFormBtn').addEventListener('click', function () {
-	const formContainer = document.getElementById('formWraper')
-	formContainer.style.display = 'flex'
-})
+// Відкрити форму
+const openButton = document.getElementById('openFormBtn');
+if (openButton) {
+    openButton.addEventListener('click', function () { 
+        const formContainer = document.getElementById('formWraper');
+        if (formContainer) {
+            formContainer.style.display = 'flex';
+        }
+    });
+}
 
-document.getElementById('closeZapisForm').addEventListener('click', function () {
-	const formContainer = document.getElementById('formWraper')
-	formContainer.style.display = 'none'
-})
+// Закрити форму
+const closeButton = document.getElementById('closeZapisForm');
+if (closeButton) {
+    closeButton.addEventListener('click', function () {
+        const formContainer = document.getElementById('formWraper');
+        if (formContainer) {
+            formContainer.style.display = 'none';
+        }
+    });
+}
 
-document.getElementById('submitZapisBtn').addEventListener('click', function () {
-	const form = document.getElementById('zapisForm')
-	form.reset();
-})
+// Відкрити форму "Записатись" для кожної кнопки
+document.querySelectorAll('.services-button-signUpForm').forEach(button => {
+    button.addEventListener('click', function () {
+        const formContainer = document.getElementById('formWraper');
+        if (formContainer) formContainer.style.display = 'flex';
+    });
+});
+
+// Очистити форму після відправлення
+const submitButton = document.getElementById('submitZapisBtn');
+if (submitButton) {
+    submitButton.addEventListener('click', function () {
+        const form = document.getElementById('zapisForm');
+        if (form) {
+            form.reset();
+        }
+    });
+}
+
