@@ -4,17 +4,17 @@ footer{
     justify-content: space-around;
     flex-direction: row;
     padding: 1%;
-    color: var(--color-teracota-dark);
+    color: rgba(0,0,0);
     flex-wrap: wrap;
 }
 
 footer a{
-    color: var(--color-teracota-dark);
+    color: rgba(0,0,0);
     cursor: pointer;
 }
 
 footer a:hover{
-    color: var(--color-teracota-darker)
+    color: rgb(51, 50, 50)
 }
 
 footer h2{
